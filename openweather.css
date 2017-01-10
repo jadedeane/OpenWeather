@@ -1,0 +1,179 @@
+body,td,div {
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+input.header {
+	font-family: Verdana, Arial;
+	font-size: 7pt;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid;
+	border-color: #000000;
+	font-weight : bold;
+}
+
+.forecastheader {
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	font-size: 7pt;
+	color: #FFFFFF;
+	background-color: #42668D;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.forecast {
+	font-family: Verdana, Arial;
+	color: #000000;
+	background-color: #D4D4D5;
+}
+
+.forecast_small {
+	font-family: Verdana, Arial;
+	color: #000000;
+	background-color: #D4D4D5;
+	font-size: 7pt;
+}
+
+.pagetop {
+	font-family: Verdana, Arial;
+	font-size: 20pt;
+	color: #000000;
+}
+
+.pagetop_icon{
+	font-family: Verdana, Arial;
+	background-color: #FFFFFF;
+	background-image: url(images/logo.gif);
+	background-repeat: no-repeat;
+	padding-right: 5px;
+}
+
+.pagetop_desc {
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #000000;
+	text-indent: 5;
+}
+
+.folder {
+	font-family: Verdana, Arial;
+	padding-left: 0px;
+	padding-top: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2F6690;
+	background-color: #FFFFFF;
+}
+
+
+.subfolder_top {
+	font-family: Verdana, Arial;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	color: #FFFFFF;
+	background-image: url(images/subfolder_top.gif);
+	background-repeat: no-repeat;
+	text-indent: 8px;
+	font-weight: bold;
+}
+
+.folder_top {
+	font-family: Verdana, Arial;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	color: #FFFFFF;
+	background-image: url(images/folder_top.gif);
+	background-repeat: no-repeat;
+	text-indent: 8px;
+	font-weight: bold;
+}
+
+.cityname {
+	font-family: Verdana, Arial;
+	color: #123F61;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.cityname_cont {
+	font-family: Verdana, Arial;
+	font-size: 10pt;
+}
+
+.big {
+	font-family: Verdana, Arial;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.header {
+	font-family: Verdana, Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	border-color: #FFFFFF;
+}
+
+.smallheader {
+	font-family: Verdana, Arial;
+	color: #123F61;
+	font-size: 8pt;
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+
+.key_header {
+	font-family: Verdana, Arial;
+	color: #000000;
+}
+
+.small {
+	font-family: Verdana, Arial;
+	font-size: 7pt;
+}
+
+.reallysmall {
+	font-family: Verdana, Arial;
+	font-size: 6pt;
+}
+
+.date {
+	font-family: Verdana, Arial;
+	color: #525F80;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.local_information {
+	font-family: Verdana, Arial;
+	padding-bottom: 5px;
+}
+
+hr {
+	font-family: Verdana, Arial;
+	color: #FFFFFF;
+}
+
+a,a:link,a:visited {
+	font-family: Verdana, Arial;
+	color : #1F2D4F;
+	text-decoration : none;
+}
+
+a:hover {
+	font-family: Verdana, Arial;
+	color: #525F80;
+	text-decoration: none;
+}
+
+a.header,a.header:link,a.header:visited {
+	font-family: Verdana, Arial;
+	color : #FFFFFF;
+	text-decoration : none;
+	font-weight : bold;
+}

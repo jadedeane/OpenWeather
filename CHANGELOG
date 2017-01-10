@@ -1,0 +1,189 @@
+4/29/2002 - Inserted code to insert KPIA as the forecast city for KBMI as a NWS forecast
+does not exisit for KBMI.
+
+3/26/2002 - 
+Inspired again.  Working to move all static images to DB.  Created openweather_blobimg.pl.
+Perhaps I will attempt this at a later date.
+
+3/25/2002 - 
+Thanks to David Kirol (d.kirol@attbi.com) for his efforts 
+with MySQL and BLOBs.
+
+1/8/2002 - 
+Added "arial.ttf" for Image::Magick.
+
+1/7/2002 - 
+Fixed openweather_cycle.pl failure to aquire 00Z cycle.
+
+1/6/2002 -
+Version 0.21 released.  Enjoy!
+
+1/5/2002 - 
+Modified legend.gif to cover the NOAA DBZ legend.  For some reason using Win32 
+I can't composite an image with Image::Magick if it's white (#FFFFFF).  Metric selection 
+only appears when you've selected an ICAO.
+
+1/3/2002 - 
+Allowed removal of header and footer in config.
+
+12/30/2001 - 
+Created new weather condition images.
+
+12/29/2001 - 
+Allowed second command line option for openweather_nexrad.pl.  
+Example: openweather_nexrad.pl DS.p20-r KESX.
+
+12/26/2001 - 
+Moved flags to images/flags directory.
+
+12/18/2001 - 
+Happy birthday, Perl.  You beautiful bastard.
+
+12/16/2001 - 
+At long last, international support!  A main page tab titled "International" 
+has been included.  Will list every country in the si table.  I don't really like the looks 
+of this section yet, perhaps a face lift later.
+
+12/15/2001 - 
+Migrated development to Win32.  Aside from modifying the first line of the file 
+from '#!/usr/bin/perl' to '#!E:\Perl\bin\perl.exe' nothing was changed.
+
+12/14/2001 - 
+Halted web site and mail-list.
+
+12/13/2001 - 
+Added support for international sites (ICAO query only at this time).
+
+12/12/2001 - 
+Removed trends section.  Fixed negative temperatures in openweather_mrtg.pl.  
+Removed automatic cycle - 1 feature in get_cycle().  site_query() will now attempt to query 
+current cycle, and fall back to previous_cycle() if no current cycle exists.  In the event 
+no current or previous cycle is found, the standard "no cycle found" error message will be 
+displayed.  Moved filler.gif from 'nexrad' to 'images' directory.
+
+12/11/2001 - 
+Added openweather_mrtg.pl into the mix.  MRTG has returned to the project!  
+Currently supporting temperature output only.
+
+12/10/2001 - 
+Moved weather condition images into images/conditions.  Completed "NEXRAD Locations" 
+image map.  New logo.gif, behold the glory of lens flare!  See what happens when you put PhotoShop 
+into the hands of someone like myself?  Added DS.78ohp (1hr rainfall totals) into NEXRAD sites.
+
+12/9/2001 - 
+Split out all user configurable vars into openweather.cfg, added README, INSTALL, and 
+CHANGELOG.  Thanks to Don "Duck" Harper (duck@duckland.org) for his work on this.  Sorting Zip Code 
+searches based on distance now, additional table "distance_temp" required.  See openweather.sql for 
+more information.  Refined metric conversions.
+
+12/8/2001 - 
+Added "NEXRAD Locations" tab to main page.  Will finish image map at a later date.
+
+12/6/2001 - 
+Version 0.20 released.  Included support for the metric system.  Added snazzy state flags.  
+Corrected database errors in openweather_nexrad.pl.
+
+12/4/2001 - 
+Version 0.19.1 released.  Corrected temperature conversions.  Included support for negative 
+temperature values.
+
+12/2/2001 - 
+Version 0.19 released.  Finalized many cosmetic details.  Forecast section complete.  Support 
+for Canada, Alaska, and Hawaii.
+
+11/18/2001 - 
+Looking for assistance in developing a common configuration mechanism and Microsoft SQL server 
+support.  Could also use some Q&A type support in the way of verification, cleanup, etc.  Please subscribe 
+to the mailing list if you would like to participate!
+
+11/12/2001 - 
+Version 0.18 released.
+
+11/11/2001 - 
+Formally changed project name from "Weather Fetch" to "Open Weather".  It would seem countless 
+multitudes of neophytes have already named their obscure projects "Weather Fetch".
+
+10/16/2001 - 
+Version 0.17 released.  Included forecast functionality.  Included composite image.
+
+9/28/2001 - 
+Version 0.16 released.  I'm primarily releasing this due to many requests for various fixes.
+This release corrects weather condition inaccuracies.  Many new cosmetic features incorporated in wfetch.css.  
+There is an outstanding issue with heat index and wind chill calculations.  Get on the mail list and help!  
+Image::Magick is now required in wfetch_nexrad.pl.
+
+9/20/2001 - 
+Created mail list!  Send email to openweather-request@riven.net.  If you're interested in this 
+project, or have questions, subscribe.
+
+8/31/2001 - Version 0.15 released.  Included graphing support.  MRTG is no longer supported.  I've decided 
+for graphing purposes to use the GD Perl modules.  If you wish to get your hands on the old MRTG code, look 
+into v0.14 or the legacy software.  How you graph the information is really arbitrary.
+
+8/25/2001 - 
+Version 0.14 released.  Included support for animated NEXRAD imagery.  Incorporated new look and 
+feel into the script, looks rather slick now.  Use of wfetch_query.html no longer required, script generates 
+it's on user selection page.
+
+8/23/2001 - 
+As you can tell, this project has undergone a major face-lift.  I'm now focusing my efforts on a 
+much more robust weather gathering system.  The latest release brings SQL into the mix.
+
+8/8/2001 -
+Version 0.12.11 released.  Included are wfetch_gather v0.2 and wfetch_graph v0.2.  Weather Fetch now utilizes 
+two separate, yet equally important scripts.  Wfetch_gather attempts to retrieve a METAR decode for the specified 
+site code, while wfetch_graph is called from MRTG and prepares the selected information.  An updated MRTG config 
+example can be found on this page.  A third script, wfetch_report is in the works.  It will query the latest 
+decode and prepare a customizable HTML page. 
+
+8/7/2001 -
+
+Version 0.12.8 released.  Be warned, this is still new stuff.  Use at your own risk.  Included support for a debug 
+switch, nothing as a user defined output, and a HTML report section.            
+
+8/6/2001 -
+Version 0.12.6 released.  Be warned, this is still new stuff.  Use at your own risk.  Included support for user 
+defined output.
+
+8/5/2001 -
+Working to include user defined output (i.e. temperature, wind speed, etc.).  Version 0.12.2 released.  Be warned, 
+this is new stuff.  Experiment at your own risk.  Removed Net:: FTP support (fails more times than it’s useful).  
+Attempting to move away from flat files in place of arrays.  A version with complete use of SQL is still in the works.
+
+7/29/2001 -
+Version 0.11 released.  Added support for LWP::UserAgent and the use of HTTP transfers.
+
+7/21/2001 -
+Working to add SQL support into history.  Introduced correct version conventions.
+
+7/14/2001 -
+Version 0.9 released.  Removed need for wget.  Station information is now retrieved using the Net::FTP module.
+
+7/11/2001 -
+Version 0.8 released.  Added increased history flexibility.  Converted standalone history into a subroutine.  
+The decision whether or not to process a station dump is now determined by the size of the file (i.e. if unable 
+to download it will create 0 byte file).  Thank you to Michael Teator for the light bulb on null files.  I’m 
+considering whether or not to fetch the file via a self developed module or take Michael’s suggestion on ncftpget.  
+Working on version 0.8 and have noticed something.  Adjusting the wget “tries” switch to at least 10 has shown better 
+results.  Planning to make this default in next release.  Attempting to write error handling for the wget section 
+(i.e. fetch section).  I have yet to isolate the problem.  It seems every now and then when running the script no 
+information is returned.  I’m welcoming any suggestions.Version 0.6 released.  Included major error handling 
+improvements.  Before a station file is fetched, the script attempts to send a TCP “ping” and ICMP_ECHO_REQUEST.  
+Based on the return of these, either the script will continue to process the information or refer to its history.  
+Ah yes, history.  After a few packs of cigarettes and digging into the PERL cookbook, a very simple history system 
+(enabled by default) has been established.  A file called “history” in your $weather_dir keeps a plain text account 
+of all station file transfers and their timestamps.  By setting $keep_history to True (i.e. 1 or for that matter 
+anything other than 0 or null) history is enabled.  In the event that the NOAA site cannot be reached, the history 
+file will be processed to determine the last valid information.  In the event of failure, the values will be set to 0.
+
+7/10/2001 -
+Version 0.4 released.  Added a time stamp to the temporary weather dump file.
+
+7/9/2001 -
+Version 0.3 released:  Included support for a temperature of 0.  Version 0.2 released:  Modified output to display 
+positive or negative ambient temperature.  Based on the ambient temperature, either a null value followed by a temperature 
+is returned or the opposite in case of a negative value.  For example; an ambient temperature of –10 is processed, the 
+following is returned: 10,0 where an ambient temperature of 10 is processed, the following is returned: 0,10.
+
+7/1/2001 - 
+Project started as Weather Fetch.  A simple MRTG weather solution.
