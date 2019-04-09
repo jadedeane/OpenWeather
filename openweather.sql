@@ -96,6 +96,6 @@ CREATE TABLE distance_temp (
 );
 
 # Load data.
-load data local infile "/home/moose/openweather/nsd_cccc.txt" into table si fields terminated by ';';
-load data local infile "/home/moose/openweather/time_zones.txt" into table tz fields terminated by ';';
-load data local infile "/home/moose/openweather/zip_codes.txt" into table zip fields terminated by ';';
+load data local infile "nsd_cccc.txt" into table si fields terminated by ';';
+load data local infile "time_zones.txt" into table tz fields terminated by ';';
+load data local infile "zip_codes.txt" into table zip fields terminated by ';';
