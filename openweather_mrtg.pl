@@ -3,8 +3,6 @@
 # Script: openweather_mrtg.pl rev 3
 # Developer: Jade E. Deane (jade.deane@gmail.com)
 # Purpose: Output information for MRTG.
-#
-# License: Distributed under the GNU General Public License.
 
 use strict;
 

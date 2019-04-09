@@ -3,8 +3,6 @@
 # Script: openweather_nexrad.pl rev 34
 # Developer: Jade E. Deane (jade.deane@gmail.com)
 # Purpose: Fetch NEXRAD information.
-#
-# License: Distributed under the GNU General Public License.
 
 use strict;
 

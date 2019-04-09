@@ -3,8 +3,7 @@
 # Script: openweather_cycle.pl rev 28
 # Developer: Jade E. Deane (jade.deane@gmail.com)
 # Purpose: Fetch METAR information.
-#
-# License: Distributed under the GNU General Public License.
+
 
 use strict;
 

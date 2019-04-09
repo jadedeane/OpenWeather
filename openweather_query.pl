@@ -3,8 +3,6 @@
 # Script: openweather_query.pl rev 109
 # Developer: Jade E. Deane (jade.deane@gmail.com)
 # Purpose: CGI to query weather information.
-#
-# License: Distributed under the GNU General Public License.
 
 use strict;
 

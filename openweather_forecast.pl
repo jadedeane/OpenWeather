@@ -3,8 +3,6 @@
 # Script: openweather_forecast.pl rev 15
 # Developer: Jade E. Deane (jade.deane@gmail.com)
 # Purpose: Fetch NOAA forecasts.
-#
-# License: Distributed under the GNU General Public License.
 
 use strict;
 

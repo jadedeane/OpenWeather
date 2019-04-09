@@ -2,8 +2,6 @@
 # File: openweather.sql rev 9
 # Developer: Jade E. Deane (jade.deane@gmail.com)
 # Purpose: Build initial database tables.
-#
-# License: Distributed under the GNU General Public License.
 
 # Sites.
 DROP TABLE IF EXISTS si;
